@@ -1,0 +1,43 @@
+Running tests on Resnet50 Models
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_lastlayer
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.685416666667
+	Test Sensitivity: 0.856666666667
+	Test Specificity: 0.37
+	Test Precision: 0.844700082169
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_last2layers
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.685833333333
+	Test Sensitivity: 0.856666666667
+	Test Specificity: 0.39
+	Test Precision: 0.848885218827
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_alllayers
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.709583333333
+	Test Sensitivity: 0.740833333333
+	Test Specificity: 0.613333333333
+	Test Precision: 0.884577114428
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_lastlayer_flipaug
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.6625
+	Test Sensitivity: 0.834166666667
+	Test Specificity: 0.373333333333
+	Test Precision: 0.841883936081
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_last2layers_flipaug
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.667916666667
+	Test Sensitivity: 0.850833333333
+	Test Specificity: 0.343333333333
+	Test Precision: 0.838259441708
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.

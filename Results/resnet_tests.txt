@@ -1,0 +1,82 @@
+Python 2.7.12 (default, Nov 19 2016, 06:48:10) 
+[GCC 5.4.0 20160609] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> runfile('/home/veda/projects/dr-classification/tests.py', wdir='/home/veda/projects/dr-classification')
+Using TensorFlow backend.
+2017-11-03 15:25:19.842184: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-03 15:25:19.842203: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-03 15:25:19.842206: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-03 15:25:19.842208: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-03 15:25:19.842211: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-03 15:25:19.955000: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2017-11-03 15:25:19.955377: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: GeForce GTX 1060 6GB
+major: 6 minor: 1 memoryClockRate (GHz) 1.835
+pciBusID 0000:01:00.0
+Total memory: 5.93GiB
+Free memory: 5.59GiB
+2017-11-03 15:25:19.955397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2017-11-03 15:25:19.955403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2017-11-03 15:25:19.955416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0)
+Running tests on Resnet50 Models
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+2017-11-03 15:25:22.616839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0)
+Testing model: resnet50_lastlayer
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.685416666667
+	Test Sensitivity: 0.856666666667
+	Test Specificity: 0.37
+	Test Precision: 0.844700082169
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_last2layers
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.685833333333
+	Test Sensitivity: 0.856666666667
+	Test Specificity: 0.39
+	Test Precision: 0.848885218827
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+2017-11-03 15:26:24.075312: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 8008 get requests, put_count=8004 evicted_count=1000 eviction_rate=0.124938 and unsatisfied allocation rate=0.137862
+2017-11-03 15:26:24.075335: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+Testing model: resnet50_alllayers
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.709583333333
+	Test Sensitivity: 0.740833333333
+	Test Specificity: 0.613333333333
+	Test Precision: 0.884577114428
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_lastlayer_flipaug
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.6625
+	Test Sensitivity: 0.834166666667
+	Test Specificity: 0.373333333333
+	Test Precision: 0.841883936081
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_last2layers_flipaug
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.667916666667
+	Test Sensitivity: 0.850833333333
+	Test Specificity: 0.343333333333
+	Test Precision: 0.838259441708
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_alllayer_flipaug
+Found 1500 images belonging to 5 classes.
+	Test ROC : 0.705833333333
+	Test Sensitivity: 0.793333333333
+	Test Specificity: 0.53
+	Test Precision: 0.870997255261
+Found 2000 images belonging to 5 classes.
+Found 1500 images belonging to 5 classes.
+Testing model: resnet50_lastlayer_flipaug_std
+Found 1500 images belonging to 5 classes.
+/usr/local/lib/python2.7/dist-packages/keras/preprocessing/image.py:546: UserWarning: This ImageDataGenerator specifies `featurewise_std_normalization`, but it hasn'tbeen fit on any training data. Fit it first by calling `.fit(numpy_data)`.
+  warnings.warn('This ImageDataGenerator specifies '
+	Test ROC : 0.6725
+	Test Sensitivity: 0.871666666667
+	Test Specificity: 0.36
+	Test Precision: 0.844911147011
